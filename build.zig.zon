@@ -1,0 +1,15 @@
+.{
+    .name = "moodlefetch",
+    .version = "0.0.0",
+    .dependencies = .{
+        .tls12 = .{
+            .url = "https://github.com/ToreKnz/zig-tls12/archive/5a38169603a5c7b6afcb012af03259ba0ab63686.tar.gz",
+            .hash = "1220a596de868673d9062626c5f0f59fc5c06d0b48b77a6f7458961072cd9c1dd36f",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
