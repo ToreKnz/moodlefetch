@@ -39,7 +39,7 @@ pub fn main() !void {
         std.debug.print("Config read successfully!\n", .{});
     } else |err| {
         if (err == std.fs.File.OpenError.FileNotFound) {
-            const token = terminal.promptUser(allocator, "No configuration file not found, please enter your Moodle token!\n") catch |e| {
+            const token = terminal.promptUser(allocator, "No configuration file found, please enter your Moodle token!\n") catch |e| {
                 std.debug.print("Error occured: {!}\n", .{e});
                 return;
             };
